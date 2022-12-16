@@ -1,6 +1,9 @@
 .img-set {
-  @include section(0, 94px);
-    // padding-top: 0;
+  @include section;
+
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
   }
   
   .img-set__list {
@@ -10,9 +13,12 @@
   
   .img-set__item {
     position: relative;
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 0;
+
+    @media screen and (min-width: 1200px){
+      width: 370px;
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
   
   .img-set__item:nth-child(3n) {

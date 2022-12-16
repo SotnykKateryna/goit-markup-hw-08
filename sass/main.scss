@@ -2,6 +2,7 @@
 @import'./utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+@import './utils/placeholders';
 
 
 // base styles
@@ -24,3 +25,4 @@
 @import './components/clients';
 @import './components/portfolio';
 @import './components/footer';
+@import './components/menu';

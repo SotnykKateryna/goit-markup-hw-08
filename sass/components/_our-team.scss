@@ -1,22 +1,37 @@
 .our-team {
-  @include section(94px, 94px);
+  @include section;
 
   background-color: #f5f4fa;
 }
 
 .items {
-  display: flex;
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px){
+   flex-wrap: nowrap;
+  }
 }
 
 .items .item {
-  width: 270px;
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
 }
 
-.items .item:not(:last-child) {
-  margin-right: 30px;
-}
+// .items .item:not(:last-child) {
+//     margin-right: 30px;
+ 
+// }
 
 .items .title-item {
   font-weight: 500;
