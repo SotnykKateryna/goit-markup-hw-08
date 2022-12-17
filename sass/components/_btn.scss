@@ -16,7 +16,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 216px;
+  min-width: 200px;
   min-height: 50px;
   border: transparent;
 
@@ -28,6 +28,10 @@
   &:focus {
     color: var(--white-color);
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
   }
 }
 
@@ -173,6 +177,10 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
   }
 }
 

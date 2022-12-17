@@ -30,8 +30,8 @@
 
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   transition-property: color;
@@ -41,6 +41,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -53,7 +58,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -17px;
+  bottom: -1px;
 
   display: block;
   width: 100%;
@@ -97,13 +102,18 @@
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 1199px) {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
